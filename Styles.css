@@ -1,0 +1,155 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.popup {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff66b2;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ff3385;
+}
+
+.hidden {
+  display: none;
+}
+
+.cake-container {
+  margin-top: 50px;
+  animation: cakeAppear 3s ease-in-out;
+}
+
+.cake {
+  background-color: #ff66b2;
+  color: white;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.balloon {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 80px;
+  background-color: #ff99cc;
+  border-radius: 50%;
+  animation: balloonFloat 5s ease-in-out infinite;
+}
+
+.balloon-1 { left: 10%; animation-delay: 0s; }
+.balloon-2 { left: 20%; animation-delay: 0.5s; }
+.balloon-3 { left: 30%; animation-delay: 1s; }
+.balloon-4 { left: 40%; animation-delay: 1.5s; }
+.balloon-5 { left: 50%; animation-delay: 2s; }
+.balloon-6 { left: 60%; animation-delay: 2.5s; }
+.balloon-7 { left: 70%; animation-delay: 3s; }
+.balloon-8 { left: 80%; animation-delay: 3.5s; }
+.balloon-9 { left: 90%; animation-delay: 4s; }
+.balloon-10 { left: 15%; animation-delay: 4.5s; }
+.balloon-11 { left: 25%; animation-delay: 5s; }
+.balloon-12 { left: 35%; animation-delay: 5.5s; }
+.balloon-13 { left: 45%; animation-delay: 6s; }
+.balloon-14 { left: 55%; animation-delay: 6.5s; }
+.balloon-15 { left: 65%; animation-delay: 7s; }
+.balloon-16 { left: 75%; animation-delay: 7.5s; }
+.balloon-17 { left: 85%; animation-delay: 8s; }
+
+@keyframes balloonFloat {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-500px); }
+}
+
+@keyframes cakeAppear {
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+#talha-message {
+  font-size: 24px;
+  color: #ff66b2;
+  margin-top: 50px;
+}
+
+.talha-animation {
+  margin-top: 20px;
+  animation: micMove 3s infinite;
+}
+
+.talha-body {
+  width: 60px;
+  height: 100px;
+  background-color: #ff99cc;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.talha-head {
+  width: 50px;
+  height: 50px;
+  background-color: #ff3385;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.talha-mic {
+  width: 10px;
+  height: 40px;
+  background-color: black;
+  margin: 10px auto;
+}
+
+@keyframes micMove {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+#message {
+  font-size: 24px;
+  color: #ff66b2;
+  margin-top: 50px;
+}
+
+#kisses {
+  font-size: 30px;
+  animation: blowKisses 2s infinite;
+}
+
+@keyframes blowKisses {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
